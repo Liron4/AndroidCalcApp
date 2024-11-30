@@ -75,7 +75,7 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/buttonmulti2"
+            android:id="@+id/buttonmulti"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -127,14 +127,14 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/buttonminus"
+            android:id="@+id/buttondivide"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/buttondesign"
+            android:text="÷"
             android:onClick="onOperatorClick"
-            android:text="-"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -196,14 +196,16 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/buttonC"
+            android:id="@+id/buttonerase"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/buttondesign"
-            android:text="C"
-            android:textSize="20sp" />
+            android:textSize="22sp"
+            android:text="⌫"
+            android:onClick="onEraseClick" />
+
 
         <Button
             android:id="@+id/button0"
@@ -217,23 +219,25 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/buttonerase"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/buttondesign"
-            android:text="⌫"
-            android:textSize="20sp" />
-
-        <Button
             android:id="@+id/buttonequal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/buttondesign"
+            android:onClick="onEqualClick"
             android:text="="
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonminus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttondesign"
+            android:onClick="onOperatorClick"
+            android:text="-"
             android:textSize="20sp" />
     </LinearLayout>
 </LinearLayout>
